@@ -148,6 +148,7 @@ def resetFlag():
         stop_thread = True
         time.sleep(5)                                                     ## Allocating time for thread to terminate
         print("Restarting with flags reset")                              ## Debug
+        main_thread.join()
         stop_thread = False
         main_thread = Thread(target = init, args = [True, True, True, True])
         main_thread.start()
