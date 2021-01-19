@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
   
 ##
-##         @author: Robert Steve
+##         @author: Rob Steve
 ##         @date created: January 16th, 2021
 ##         @date last modified: January 18th, 2021
 ##      
-##              Vaccine appointment notification twitter bot.
+##              NJ Covid-19 vaccine appointment availability notification twitter bot.
 ##
 ##
 
@@ -18,9 +18,14 @@ import time
 from bs4 import BeautifulSoup
 import pytz
 from datetime import datetime
+from threading import Thread
 
 global headers
+global count
+global stop_thread
 
+stop_thread = False
+count = 1
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
 
 consumer_key = '' 
@@ -85,7 +90,7 @@ def tweet(option):
 
 
 def check(shoprite, middlesex, morris, burlington, hunterdon_initcount):
-    while True:
+    while stop_thread == False:
 
         #Hunterdon Health Dept
         hunterdon_url = "https://www.signupgenius.com/go/10c0d44a4af23a3f5c25-covid"
@@ -134,9 +139,25 @@ def check(shoprite, middlesex, morris, burlington, hunterdon_initcount):
         else:
             testtime = random.randint(0, 9) + 30
             time.sleep(testtime)
-            print("Checking...")
+            print("[{}] Checking...".format(count))
+            count += 1
             continue
     return 0
+  
+def resetFlag():
+    while True:
+        time.sleep(1795)
+        stop_thread = True
+        time.sleep(5)
+        main_thread = threading.Thread(target = init, args = [True, True, True, True])
+        main_thread.start()
+    return 0
 
-init(True, True, True, True)
+    
+if __name__ == '__main__':
+    main_thread = threading.Thread(target = init, args = [True, True, True, True])
+    main_thread.start()
+    
+    flag_reset_thread = threading.Thread(target = resetFlag)
+    flag_reset_thread.start()
     
