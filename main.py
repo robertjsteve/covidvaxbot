@@ -143,6 +143,7 @@ def check(shoprite, middlesex, morris, burlington, hunterdon_initcount):
 def resetFlag():
     while True:
         global stop_thread
+        global main_thread
 
         time.sleep(1795)
         stop_thread = True
