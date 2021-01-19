@@ -91,6 +91,7 @@ def tweet(option):
 
 def check(shoprite, middlesex, morris, burlington, hunterdon_initcount):
     while stop_thread == False:
+        print("Running check()")                            ## Debug
 
         #Hunterdon Health Dept
         hunterdon_url = "https://www.signupgenius.com/go/10c0d44a4af23a3f5c25-covid"
@@ -148,12 +149,13 @@ def resetFlag():
     while True:
         time.sleep(1795)
         stop_thread = True
-        time.sleep(5)
+        time.sleep(5)                                                     ## Allocating time for thread to terminate
+        print("Restarting with flags reset")                              ## Debug
+        stop_thread = False
         main_thread = threading.Thread(target = init, args = [True, True, True, True])
         main_thread.start()
     return 0
 
-    
 if __name__ == '__main__':
     main_thread = threading.Thread(target = init, args = [True, True, True, True])
     main_thread.start()
