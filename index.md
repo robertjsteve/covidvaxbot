@@ -5,7 +5,7 @@
 
 
 **The bot is currently checking the following domains:**
-'''
+'''markdown
 ### Hunterdon County
 Hunterdon Health Department
         @ https://www.signupgenius.com/go/10c0d44a4af23a3f5c25-covid
