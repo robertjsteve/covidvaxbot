@@ -20,8 +20,6 @@ import pytz
 from datetime import datetime
 from threading import Thread
 
-
-
 stop_thread = False
 count = 1
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
@@ -50,10 +48,10 @@ def init(shoprite, middlesex, morris, burlington):
 
 
 def tweet(option):
+  
     tz_NY = pytz.timezone('America/New_York') 
     datetime_NY = datetime.now(tz_NY)
     time = datetime_NY.strftime("%H:%M:%S")
-
 
     if option == "hunterdon":
         tweet = "({} EST) ALERT 🚨: Possible availability at the Hunterdon Health Department:\nhttps://www.signupgenius.com/go/10c0d44a4af23a3f5c25-covid".format(time)
@@ -83,7 +81,6 @@ def tweet(option):
         api.update_status(tweet)
         init(True, True, True, False)
         return 0
-
 
 
 def check(shoprite, middlesex, morris, burlington, hunterdon_initcount):
