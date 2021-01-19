@@ -7,23 +7,24 @@
 
 ### Hunterdon County
 Hunterdon Health Department
-        @ [Link](https://www.signupgenius.com/go/10c0d44a4af23a3f5c25-covid)
+        - @ [Link](https://www.signupgenius.com/go/10c0d44a4af23a3f5c25-covid)
 
 ### Morris County
 Morris County Regional Vaccination Center
-        @ [Link](https://www.atlantichealth.org/conditions-treatments/coronavirus-covid-19/covid-vaccine/schedule-vaccine-appointment.html)
+        - @ [Link](https://www.atlantichealth.org/conditions-treatments/coronavirus-covid-19/covid-vaccine/schedule-vaccine-appointment.html)
         
 ### Burlington County
 Boyd's Pharmacy
-        @ [Link](https://boydsrxs.com/)
+        - @ [Link](https://boydsrxs.com/)
 
 ### Middlesex County
 Middlesex County Regional Vaccination Center
-        @ [Link](https://app.acuityscheduling.com/schedule.php?owner=19830283)
+        - @ [Link](https://app.acuityscheduling.com/schedule.php?owner=19830283)
 
 ### State-wide
 Various ShopRite Locations
-        @ [Link](https://vaccines.shoprite.com/)
+        - @ [Link](https://vaccines.shoprite.com/)
+   
    
    
 _more to be added..._
