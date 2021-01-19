@@ -20,9 +20,7 @@ import pytz
 from datetime import datetime
 from threading import Thread
 
-global headers
-global count
-global stop_thread
+
 
 stop_thread = False
 count = 1
@@ -40,7 +38,7 @@ api = tweepy.API(auth)
 
 
 def init(shoprite, middlesex, morris, burlington):
-    
+
     #Hunterdon Health Dept
     hunterdon_url = "https://www.signupgenius.com/go/10c0d44a4af23a3f5c25-covid"
     hunterdon_response = requests.get(hunterdon_url, headers=headers)
@@ -137,28 +135,30 @@ def check(shoprite, middlesex, morris, burlington, hunterdon_initcount):
             tweet("burlington")
             
         else:
+            global count
             check_interval = random.randint(0, 9) + 30
             time.sleep(check_interval)
-            print("[{}] Checking...".format(count))
             count += 1
+            print("[{}] Checking...".format(count))
             continue
     return 0
   
 def resetFlag():
     while True:
+        global stop_thread
+
         time.sleep(1795)
         stop_thread = True
         time.sleep(5)                                                     ## Allocating time for thread to terminate
         print("Restarting with flags reset")                              ## Debug
         stop_thread = False
-        main_thread = threading.Thread(target = init, args = [True, True, True, True])
+        main_thread = Thread(target = init, args = [True, True, True, True])
         main_thread.start()
     return 0
 
 if __name__ == '__main__':
-    main_thread = threading.Thread(target = init, args = [True, True, True, True])
+    main_thread = Thread(target = init, args = [True, True, True, True])
     main_thread.start()
     
-    flag_reset_thread = threading.Thread(target = resetFlag)
+    flag_reset_thread = Thread(target = resetFlag)
     flag_reset_thread.start()
-    
