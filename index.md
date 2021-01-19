@@ -1,36 +1,33 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/robertjsteve/covidvaxbot/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## @covidvaxbot
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+**The bot is currently checking the following domains:**
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Hunterdon County
+Hunterdon Health Department
+        @ https://www.signupgenius.com/go/10c0d44a4af23a3f5c25-covid
 
-```markdown
-Syntax highlighted code block
+### Morris County
+Morris County Regional Vaccination Center
+        @ https://www.atlantichealth.org/conditions-treatments/coronavirus-covid-19/covid-vaccine/schedule-vaccine-appointment.html
+        
+### Burlington County
+Boyd's Pharmacy
+        @ https://boydsrxs.com/
 
-# Header 1
-## Header 2
-### Header 3
+### Middlesex County
+Middlesex County Regional Vaccination Center
+        @ https://app.acuityscheduling.com/schedule.php?owner=19830283
 
-- Bulleted
-- List
+### State-wide
+Various ShopRite Locations
+        @ https://vaccines.shoprite.com/
+   
+   
+ 
+_more to be added..._
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/robertjsteve/covidvaxbot/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Contact
 
