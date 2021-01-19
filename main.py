@@ -86,7 +86,6 @@ def tweet(option):
         init(True, True, True, False)
         return 0
 
-    elif
 
 
 def check(shoprite, middlesex, morris, burlington, hunterdon_initcount):
