@@ -3,9 +3,9 @@
 
 
 
-
-**The bot is currently checking the following domains:**
 ```markdown
+**The bot is currently checking the following domains:**
+```
 ### Hunterdon County
 Hunterdon Health Department
         @ [Link](https://www.signupgenius.com/go/10c0d44a4af23a3f5c25-covid)
@@ -28,7 +28,6 @@ Various ShopRite Locations
    
    
 _more to be added..._
-```
 
 
 ### Contact
