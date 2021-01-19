@@ -138,8 +138,8 @@ def check(shoprite, middlesex, morris, burlington, hunterdon_initcount):
             tweet("burlington")
             
         else:
-            testtime = random.randint(0, 9) + 30
-            time.sleep(testtime)
+            check_interval = random.randint(0, 9) + 30
+            time.sleep(check_interval)
             print("[{}] Checking...".format(count))
             count += 1
             continue
